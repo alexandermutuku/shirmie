@@ -17,6 +17,8 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 
+        {{-- <link href="https://cdn.jsdelivr.net/gh/code-fx/Pure-CSS3-Animated-Border@V1.0/css/animated-border/animated-border.min.css" rel="stylesheet"> --}}
+
     </head>
 
     <body>
@@ -25,178 +27,9 @@
         </div>
 
         <section class="hero is-fullheight is-default is-bold">
-            <nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item" href="#">
-                            <img src="{{asset('images/logos/fresh-alt.svg')}}" alt="" width="112" height="28">
-                        </a>
 
-                        <a class="navbar-item is-hidden-desktop is-hidden-tablet">
-                            <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
-                                <svg width="1000px" height="1000px">
-                                    <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-                                    <path class="path2" d="M 300 500 L 700 500"></path>
-                                    <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-                                </svg>
-                                <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
-                            </div>
-                        </a>
+            @include('_includes.nav.main') <!--includes the main navigation -->
 
-                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                        </a>
-                    </div>
-
-                    <div id="navbar-menu" class="navbar-menu is-static">
-
-                        {{-- <div class="navbar-start">
-                            <a class="navbar-item is-hidden-mobile">
-                                <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
-                                    <svg width="1000px" height="1000px">
-                                        <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-                                        <path class="path2" d="M 300 500 L 700 500"></path>
-                                        <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-                                    </svg>
-                                    <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
-                                </div>
-                            </a>
-                        </div> --}}
-
-                        <div class="navbar-end">
-                            <a href="#" class="navbar-item is-secondary">
-                                Features
-                            </a>
-                            <a href="#" class="navbar-item is-secondary">
-                                Pricing
-                            </a>
-                            <div class="navbar-item has-dropdown is-hoverable">
-                                <a class="navbar-link">
-                                    Dropdown
-                                </a>
-
-                                <div class="navbar-dropdown">
-                                    <a class="navbar-item">
-                                        Dropdown item
-                                    </a>
-                                    <a class="navbar-item">
-                                        Dropdown item
-                                    </a>
-                                    <a class="navbar-item">
-                                        Dropdown item
-                                    </a>
-                                </div>
-                            </div>
-                            <a href="#" class="navbar-item is-secondary">
-                                Log in
-                            </a>
-                            <a class="navbar-item">
-                                <span class="button signup-button rounded secondary-btn raised">
-                                    Sign up
-                                </span>
-                            </a>
-                            <a class="navbar-item is-hidden-mobile">
-                                <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
-                                    <svg width="1000px" height="1000px">
-                                        <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-                                        <path class="path2" d="M 300 500 L 700 500"></path>
-                                        <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-                                    </svg>
-                                    <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item" href="#">
-                            <img src="{{asset('images/logos/fresh-alt.svg')}}" alt="" width="112" height="28">
-                        </a>
-
-                        {{-- <a class="navbar-item is-hidden-desktop is-hidden-tablet">
-                            <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
-                                <svg width="1000px" height="1000px">
-                                    <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-                                    <path class="path2" d="M 300 500 L 700 500"></path>
-                                    <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-                                </svg>
-                                <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
-                            </div>
-                        </a> --}}
-
-                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                        </a>
-                    </div>
-
-                    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
-
-                        <div class="navbar-start">
-                            {{-- <a class="navbar-item is-hidden-mobile">
-                                <div id="cloned-menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
-                                    <svg width="1000px" height="1000px">
-                                        <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-                                        <path class="path2" d="M 300 500 L 700 500"></path>
-                                        <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-                                    </svg>
-                                    <button id="cloned-menu-icon-trigger" class="menu-icon-trigger"></button>
-                                </div>
-                            </a> --}}
-                        </div>
-
-                        <div class="navbar-end">
-                            <a href="#" class="navbar-item is-secondary">
-                                Features
-                            </a>
-                            <a href="#" class="navbar-item is-secondary">
-                                Pricing
-                            </a>
-                            <div class="navbar-item has-dropdown is-hoverable">
-                                <a class="navbar-link">
-                                    Dropdown
-                                </a>
-
-                                <div class="navbar-dropdown">
-                                    <a class="navbar-item">
-                                        Dropdown item
-                                    </a>
-                                    <a class="navbar-item">
-                                        Dropdown item
-                                    </a>
-                                    <a class="navbar-item">
-                                        Dropdown item
-                                    </a>
-                                </div>
-                            </div>
-                            <a href="#" class="navbar-item is-secondary">
-                                Log in
-                            </a>
-                            <a class="navbar-item">
-                                <span class="button signup-button rounded secondary-btn raised">
-                                    Sign up
-                                </span>
-                            </a>
-                            <a class="navbar-item is-hidden-mobile">
-                                <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
-                                    <svg width="1000px" height="1000px">
-                                        <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-                                        <path class="path2" d="M 300 500 L 700 500"></path>
-                                        <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-                                    </svg>
-                                    <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
             <div class="hero-body">
                 <div class="container">
                     <div class="columns is-vcentered">
@@ -204,6 +37,7 @@
                             <h1 class="title is-1 is-bold is-spaced">
                                 Manage, Deploy.
                             </h1>
+
                             <h2 class="subtitle is-5 is-muted">Lorem ipsum sit dolor amet is a dummy text used by typography industry </h2>
                             <p>
                                 <a class="button cta rounded primary-btn raised">
@@ -362,7 +196,6 @@
                             </div>
                         </article>
                         <!-- /icon block -->
-
                     </div>
                 </div>
             </div>
@@ -473,126 +306,13 @@
             </div>
         </section>
 
+        @include('_includes.footer') <!--includes the footer-->
 
-        <footer class="footer footer-dark">
-            <div class="container">
-                <div class="columns">
-                    <div class="column">
-                        <div class="footer-logo">
-                            <img src="{{asset('images/logos/fresh-white-alt.svg')}}">
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="footer-column">
-                            <div class="footer-header">
-                                <h3>Product</h3>
-                            </div>
-                            <ul class="link-list">
-                                <li><a href="#">Discover features</a></li>
-                                <li><a href="#">Why choose our Product ?</a></li>
-                                <li><a href="#">Compare features</a></li>
-                                <li><a href="#">Our Roadmap</a></li>
-                                <li><a href="#">Request features</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="footer-column">
-                            <div class="footer-header">
-                                <h3>Docs</h3>
-                            </div>
-                            <ul class="link-list">
-                                <li><a href="#">Get Started</a></li>
-                                <li><a href="#">User guides</a></li>
-                                <li><a href="#">Admin guide</a></li>
-                                <li><a href="#">Developers</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="footer-column">
-                            <div class="footer-header">
-                                <h3>Blogroll</h3>
-                            </div>
-                            <ul class="link-list">
-                                <li><a href="#">Latest News</a></li>
-                                <li><a href="#">Tech articles</a></li>
-                                <li><a href="#">Video Blog</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="footer-column">
-                            <div class="footer-header">
-                                <h3>Follow Us</h3>
-                                <nav class="level is-mobile">
-                                    <div class="level-left">
-                                        <a class="level-item" href="https://github.com/#">
-                                            <span class="icon"><i class="fa fa-github"></i></span>
-                                        </a>
-                                        <a class="level-item" href="https://dribbble.com/#">
-                                            <span class="icon"><i class="fa fa-dribbble"></i></span>
-                                        </a>
-                                        <a class="level-item" href="https://fb.com/#">
-                                            <span class="icon"><i class="fa fa-facebook"></i></span>
-                                        </a>
-                                        <a class="level-item" href="https://twitter.com/#">
-                                            <span class="icon"><i class="fa fa-twitter"></i></span>
-                                        </a>
-                                       <a class="level-item" href="https://bitbucket.org/#">
-                                            <span class="icon"><i class="fa fa-bitbucket"></i></span>
-                                        </a>
-                                    </div>
-                                </nav>
-
-                                <a href="https://bulma.io" target="_blank">
-                                    <img src="{{asset('images/logos/made-with-bulma.png')}}" alt="Made with Bulma" width="128" height="24">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
         <!-- Back To Top Button -->
         <div id="backtotop"><a href="#"></a></div>
 
-        <div class="sidebar">
-            <div class="sidebar-header">
-                <img src="{{asset('images/logos/fresh-square.svg')}}">
-                <a class="sidebar-close" href="javascript:void(0);"><i data-feather="x"></i></a>
-            </div>
-            <div class="inner">
-                <ul class="sidebar-menu">
-                    <li><span class="nav-section-title"></span></li>
-                    <li class="have-children"><a href="#"><span class="fa fa-user"></span>User</a>
-                        <ul>
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">Account</a></li>
-                            <li><a href="#">Settings</a></li>
-                        </ul>
-                    </li>
-                    <li class="have-children"><a href="#"><span class="fa fa-envelope"></span>Messages</a>
-                        <ul>
-                            <li><a href="#">Inbox</a></li>
-                            <li><a href="#">Compose</a></li>
-                        </ul>
-                    </li>
-                    <li class="have-children"><a href="#"><span class="fa fa-image"></span>Images</a>
-                        <ul>
-                            <li><a href="#">Library</a></li>
-                            <li><a href="#">Upload</a></li>
-                        </ul>
-                    </li>
-                    <li class="have-children"><a href="#"><span class="fa fa-cog"></span>Settings</a>
-                        <ul>
-                            <li><a href="#">User settings</a></li>
-                            <li><a href="#">App settings</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>        <!-- jQuery first, then Bootstrap JS. -->
+        @include('_includes.nav.sidebar') <!--includes the sidebar navigation -->
+
   </body>
 
     <!-- JS-->

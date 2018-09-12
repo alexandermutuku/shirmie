@@ -654,7 +654,7 @@ padding:0;
 }
 
 .sidebar {
-background:#344258;
+background:#1c1c1c;
 /* width:280px; */
 height: 100%;
 position:fixed;
@@ -663,6 +663,7 @@ left:0;
 -webkit-transform:translateY(-100%);
 transform:translateY(-100%);
 transition:all .3s;
+font-size: 1.5em;
 /* z-index:10000; */
 }
 
@@ -709,12 +710,14 @@ transform:rotate(180deg);
 }
 
 .sidebar .inner .sidebar-menu {
-max-width:400px;
+max-width:300px;
 list-style:none;
 list-style-type:none;
-font-family:'Open Sans', sans-serif!important;
-margin:0;
+/* font-family:'Open Sans', sans-serif!important; */
+margin:100px;
+/* margin-left: 100px; */
 padding:0;
+font-family: "adobe-garamond-pro", Cambria, Times New Roman, Times, serif;
 }
 
 .sidebar .inner .sidebar-menu li a span {
@@ -722,20 +725,34 @@ margin-right:20px;
 color:#fff;
 }
 
+.sidebar .inner .sidebar-menu li {
+margin-right:20px;
+color:#fff;
+right: 0;
+}
+
 .sidebar .inner .sidebar-menu li.have-children ul {
-padding:0;
+margin-left: 350px;
+position: absolute;
+top: 0px;
+padding-left: 50px;
+font-family: "adobe-garamond-pro", Cambria, Times New Roman, Times, serif;
 }
 
 .sidebar .inner .sidebar-menu li.have-children li a {
-background-color:#2b3648;
-padding-left:62px;
-border-bottom:1px solid #303d52;
-font-size:.8rem;
+/* background-color:#2b3648; */
+padding-bottom: 10px;
+/* border-bottom:1px solid #303d52; */
+font-size:1.4rem;
+position: relative;
+display: block;
+line-height: 5px;
+width: 300px;
 }
 
-.sidebar .inner .sidebar-menu li.have-children li a:hover {
+/* .sidebar .inner .sidebar-menu li.have-children li a:hover {
 color:#4FC1EA;
-padding-left:62px;
+padding-left:62px; */
 }
 
 .sidebar .inner .sidebar-menu li.have-children span::after {
@@ -749,13 +766,62 @@ font-weight:200!important;
 font-size:.8rem;
 }
 
-.sidebar .inner li.active.have-children span::after {
+/* .sidebar .inner li.active.have-children span::after {
 -webkit-transform:rotate(90deg);
 transform:rotate(90deg);
-}
+} */
 
 .sidebar .inner .sidebar-menu .have-children>ul {
 display:none;
+}
+
+.sidebar .inner li:hover  > a{
+  background:none;
+}
+
+.sidebar .inner ul:hover li:not(:hover) {
+  background:none;
+  opacity: .4;
+}
+
+.sidebar .sidebar-footer {
+margin: 0px 80px;
+}
+
+.sidebar .sidebar-footer hr {
+border: 0;
+height: 0;
+border-top: 1px solid rgba(0, 0, 0, 0.1);
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+background: none;
+}
+
+.sidebar .sidebar-footer li {
+  display: inline-block;
+}
+
+.sidebar .sidebar-footer li a {
+  font-size: 1.0rem;
+  font-family: "adobe-garamond-pro", Cambria, Times New Roman, Times, serif;
+  color:#fff;
+  padding: 0px 20px 20px 0px ;
+}
+
+.sidebar .sidebar-footer ul copyright a {
+  font-size: 1.0rem;
+  font-family: "adobe-garamond-pro", Cambria, Times New Roman, Times, serif;
+  color:#fff;
+  float:right;
+  opacity: .4;
+}
+
+.sidebar .sidebar-footer li:hover  > a{
+  background:none;
+}
+
+.sidebar .sidebar-footer ul:hover li:not(:hover) {
+  background:none;
+  opacity: .4;
 }
 
 .testimonial {

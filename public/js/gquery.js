@@ -38,7 +38,7 @@ $(document).ready(function(){
             if( ! $(this).parent().hasClass("active") ){
                 $(".sidebar-menu li ul").slideUp();
                 $(this).next().slideToggle();
-                $(".sidebar-menu li").removeClass("active");
+                // $(".sidebar-menu li").remoClass("active");
                 $(this).parent().addClass("active");
             }
             else{

@@ -12,7 +12,7 @@
     "devDependencies": {
         "axios": "^0.18",
         "bootstrap": "^4.0.0",
-        "buefy": "^0.6.6",
+        "buefy": "^0.6.7",
         "bulma": "^0.7.1",
         "cross-env": "^5.1",
         "font-awesome": "^4.7.0",
@@ -20,6 +20,7 @@
         "laravel-mix": "^2.0",
         "lodash": "^4.17.4",
         "popper.js": "^1.12",
+        "pure-css3-animated-border": "^1.0.0",
         "vue": "^2.5.7"
     },
     "dependencies": {
