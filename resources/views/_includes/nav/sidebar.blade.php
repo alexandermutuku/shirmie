@@ -1,6 +1,6 @@
-<div class="sidebar">
+<nav class="sidebar is-hidden-mobile">
 		<div class="sidebar-header">
-				<img src="{{asset('images/logos/fresh-square.svg')}}">
+				<!-- <img src="{{asset('images/logos/geosol-white.svg')}}">  -->
 				<a class="sidebar-close" href="javascript:void(0);"><i data-feather="x"></i></a>
 		</div>
 
@@ -9,22 +9,16 @@
 						<li><span class="nav-section-title"></span></li>
 
 						  <li class="have-children"><a href="#"></span>HOME</a>
-								{{-- <ul>
-										<li><a href="#">Profile</a></li>
-										<li><a href="#">Account</a></li>
-										<li><a href="#">Settings</a></li>
-								</ul> --}}
+								<!-- <div class="divider"></div> --> 
 							</li>
 
-
 							<li class="have-children"><a href="#"></span>WHAT WE DO</a>
-									<ul>
-											<li><a href="#">Inbox</a></li>
-											<li><a href="#">Compose</a></li>
-									</ul>
+
 							</li>
 
 							<li class="have-children "><a href="#"></span>OUR STORY</a>
+									
+									
 									<ul class="ui-box left-topToBottom">
 											<li ><a href="#">Milestones</a></li>
 											<li><a href="#">Blog </a></li>
@@ -35,15 +29,18 @@
 									</ul>
 							</li>
 
+							<li class="have-children"><a href="#"></span>CONTACT</a>
 
-						<li class="have-children"><a href="#"></span>CONTACT</a>
-								<ul class="ui-box left-topToBottom">
-										<li><a href="#">User settings</a></li>
-										<li><a href="#">App settings</a></li>
-								</ul>
-						</li>
+							</li>
+				</ul>
+				<ul class="sidebar-social">
+							<li class='icon social fb'><i class='fa fa-facebook'></i></li>
+							<li class='icon social in'><i class='fa fa-instagram'></i></li>
+							<li class='icon social tw'><i class='fa fa-twitter'></i></li>
+							<li class='icon social in'><i class='fa fa-linkedin'></i></li>
 				</ul>
 		</div>
+
 		<div class="sidebar-footer">
 			<hr>
 			<ul class="">
@@ -51,7 +48,5 @@
 				<li><a href="#">Terms</a></li>
 				<copyright><a href="#">Copyright Geosol Consulting Ltd</a></copyright>
 			</ul>
-
 		</div>
-</div>
-       <!-- jQuery first, then Bootstrap JS. -->
+</nav>

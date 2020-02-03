@@ -7,7 +7,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
         <title> Home :: Geosol Consulting</title>
-        <link rel="icon" type="image/png"  href="{{asset('images/favicon.png')}}"/>
+        <link rel="icon" type="image/png"  href="{{asset('images/favicon.ico')}}"/>
 
         <!--Core CSS -->
         <link href="{{asset('css/core.css')}}" rel="stylesheet">
@@ -22,56 +22,61 @@
     </head>
 
     <body>
-        <div id="preloader">
-            <div id="status"></div>
-        </div>
-
-        <section class="hero is-fullheight is-default is-bold">
+    <div id="app">
+            <div id="preloader">
+                <div id="status"></div>
+            </div>
+            
+        <section class="section-1 section hero hero-landing is-fullheight">
 
             @include('_includes.nav.main') <!--includes the main navigation -->
 
-            <div class="hero-body">
-                <div class="container">
-                    <div class="columns is-vcentered">
-                        <div class="column is-5 is-offset-1 landing-caption">
-                            <h1 class="title is-1 is-bold is-spaced">
-                                Manage, Deploy.
-                            </h1>
+                <!-- <div class="container_item landing-page-container">
+                    <div class="container-wrapper">
+                        <p class="coords"> N 49 416 35.99 W 0 42 11.30</p>
+                        <div class="ecllipse-container">
+                            <h2 class="greeting">explore</h2>
+                            <div class="ellipse ellipse_outer--thin">
+                                <div class="ellipse ellipse_orbit"></div>
+                            </div>
+                            <div class="ellipse ellipse_outer--thick"></div>
 
-                            <h2 class="subtitle is-5 is-muted">Lorem ipsum sit dolor amet is a dummy text used by typography industry </h2>
-                            <p>
-                                <a class="button cta rounded primary-btn raised">
-                                    Get Started
-                                </a>
-                            </p>
                         </div>
-                        <div class="column is-5 is-offset-1">
-                            <figure class="image is-4by3">
-                                <img src="{{asset('images/illustrations/worker.svg')}}" alt="Description">
-                            </figure>
+                    </div>
+                </div> -->
+
+
+                <!-- .hero-body -->
+                <header class="hero-body">
+                    <div class="landing-caption is-overlay has-text-centered single-spaced" style="top: 400px;">
+                        <h1 class="is-1 has-text-white is-uppercase">Explore & Locate</h1>
+                        <h1 class="title is-7 has-text-white is-uppercase">Scroll to continue</h1>
+                        <a href= "#">
+                            <img src="{{asset('images/logos/scroll-down.svg')}}" alt="" width="28" height="56px">
+                        </a>
+                    </div>
+                </header>
+                <!-- /.hero-body -->
+
+
+                <!-- <div class="hero-foot mb-20">
+                    <div class="container">
+                        <div class="tabs is-centered">
+                            <ul>
+                                <li><a><img class="partner-logo" src="{{asset('images/logos/clients/systek.svg')}}"></a></li>
+                                <li><a><img class="partner-logo" src="{{asset('images/logos/clients/tribe.svg')}}" ></a></li>
+                                <li><a><img class="partner-logo" src="{{ asset('images/logos/clients/kromo.svg')}}"></a></li>
+                                <li><a><img class="partner-logo" src="{{ asset('images/logos/clients/infinite.svg')}}"></a></li>
+                                <li><a><img class="partner-logo" src="{{ asset('images/logos/clients/gutwork.svg')}}"></a></li>
+                            </ul>
                         </div>
-
                     </div>
-                </div>
-            </div>
+                </div>  -->
 
-            <div class="hero-foot mb-20">
-                <div class="container">
-                    <div class="tabs is-centered">
-                        <ul>
-                            <li><a><img class="partner-logo" src="{{asset('images/logos/clients/systek.svg')}}"></a></li>
-                            <li><a><img class="partner-logo" src="{{asset('images/logos/clients/tribe.svg')}}" ></a></li>
-                            <li><a><img class="partner-logo" src="{{ asset('images/logos/clients/kromo.svg')}}"></a></li>
-                            <li><a><img class="partner-logo" src="{{ asset('images/logos/clients/infinite.svg')}}"></a></li>
-                            <li><a><img class="partner-logo" src="{{ asset('images/logos/clients/gutwork.svg')}}"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </section> <!-- end of fullheight hero section  -->
 
-        <section class="section section-feature-grey is-medium">
-            <div class="container">
+        <section class="section-2 section is-large">
+            <div class="container" >
                 <div class="title-wrapper has-text-centered">
                     <h2 class="title is-2">Great Power Comes </h2>
                     <h3 class="subtitle is-5 is-muted">With great Responsability</h3>
@@ -133,7 +138,7 @@
             </div>
         </section>
 
-        <section class="section is-medium">
+        <section class="section-3 section is-large">
             <div class="container">
                 <div class="columns">
                     <div class="column is-centered-tablet-portrait">
@@ -201,7 +206,7 @@
             </div>
         </section>
 
-        <section class="section section-feature-grey is-medium">
+        <section class="section-4 section section-feature-grey is-large">
             <div class="container">
 
                 <div class="columns">
@@ -225,7 +230,7 @@
             </div>
         </section>
 
-        <section class="section is-medium section-secondary">
+        <section class="section-5 section is-large section-secondary">
             <div class="container">
 
                 <div class="title-wrapper has-text-centered">
@@ -273,7 +278,7 @@
             </div>
         </section>
 
-        <section class="section section-light-grey is-medium">
+        <section class="section-6 section section-light-grey is-medium">
             <div class="container">
                 <div class="title-wrapper has-text-centered">
                     <h2 class="title is-2 is-spaced">Drop us a line or two </h2>
@@ -306,19 +311,25 @@
             </div>
         </section>
 
-        @include('_includes.footer') <!--includes the footer-->
+        <section class="section-7 is-large">
+            @include('_includes.footer') <!--includes the footer-->
+        </section>
+
+
+    </div>
 
         <!-- Back To Top Button -->
         <div id="backtotop"><a href="#"></a></div>
 
         @include('_includes.nav.sidebar') <!--includes the sidebar navigation -->
 
-  </body>
+    </body>
+
 
     <!-- JS-->
-      {{-- <script src="{{asset('js/app.js') }}"></script> --}}
+       <script src="{{asset('js/app.js') }}"></script>
       <script type="text/javascript" src="{{asset('js/jquery_dev.js')}}"></script>  <!--for dev only -->
       {{-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> --}}
       <script type="text/javascript" src="{{asset('js/gquery.js') }}"></script>
-
+     
 </html>
